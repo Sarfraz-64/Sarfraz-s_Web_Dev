@@ -33,7 +33,7 @@
             overflow: hidden;
             position: sticky;
             top: 0;
-            z-index: 1; /* Ensures the navigation bar is above the video */
+            z-index: 2; /* Ensures the navigation bar is above the video */
         }
         .rect div {
             color: white;
@@ -59,7 +59,7 @@
             overflow: hidden;
             margin: 20px auto 0; /* Space between nav and section */
             position: relative;
-            z-index: 2; /* Ensures the section is above the video */
+            z-index: 1; /* Ensures the section is above the video */
         }
         .circle {
             height: 200px;
@@ -80,7 +80,7 @@
             width: 80%;
             margin: 20px auto;
             position: relative;
-            z-index: 2; /* Ensures the section is above the video */
+            z-index: 1; /* Ensures the section is above the video */
         }
         .projects {
             background-color: rgb(240, 240, 240);
@@ -99,7 +99,7 @@
             padding: 20px;
             margin-top: auto;
             position: relative;
-            z-index: 2; /* Ensures the footer is above the video */
+            z-index: 1; /* Ensures the footer is above the video */
         }
     </style>
 </head>
@@ -108,7 +108,7 @@
     <nav class="rect">
         <div>Home</div>
         <div>About</div>
-        <div>Projects</div>
+        <div><a href="#projects" style="color: white; text-decoration: none;">Projects</a></div>
         <div>Contact</div>
     </nav>
     <div class="poly">
@@ -117,7 +117,7 @@
             <h1>Muhammad Sarfraz</h1>
         </div>
     </div>
-    <section class="section projects">
+    <section id="projects" class="section projects">
         <h2>Projects</h2>
         <p>Here are some of my projects:</p>
         <ul>
