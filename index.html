@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             margin: 0;
             padding: 0;
@@ -104,82 +107,48 @@
     </style>
 </head>
 <body>
+    <!-- Background Video -->
     <video class="bg" autoplay muted loop id="back" src="1.mp4"></video>
-    <nav class="rect">
-        <div>Home</div>
-        <div>About</div>
-        <div><a href="#projects" style="color: white; text-decoration: none;">Projects</a></div>
-        <div>Contact</div>
-    </nav>
-    <div class="poly">
-        <div class="circle"></div>
-        <div class="box">
-            <h1>Muhammad Sarfraz</h1>
+    
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="rect">
+            <div><a href="#Home" style="color: white; text-decoration: none;">Home</a></div>
+            <div><a href="#projects" style="color: white; text-decoration: none;">Projects</a></div>
+            <div>Skills</div>
+            <div><a href="#contact" style="color: white; text-decoration: none;">Contact</a></div>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="Home">
+        <!-- Intro Section -->
+        <div class="poly">
+            <div class="circle"></div>
+            <div class="box">
+                <h1>Muhammad Sarfraz</h1>
+            </div>
         </div>
-    </div>
-    <section id="projects" class="section projects">
-        <h2>Projects</h2>
-        <p>Here are some of my projects:</p>
-        <ul>
-            <li>
-                <strong>Project 1: Chess Game in C++</strong>
-                <ul>
-                    <li><strong>Description:</strong> Developed a fully functional chess game using C++, incorporating all chess rules including castling, en passant, and pawn promotion. The game features a clean console interface and allows two players to play in turn.</li>
-                    <li><strong>Key Features:</strong>
-                        <ul>
-                            <li>Turn-based gameplay with legal move validation.</li>
-                            <li>Implementation of key chess rules.</li>
-                            <li>Console-based interface with clear representation of the chessboard.</li>
-                        </ul>
-                    </li>
-                    <li><strong>Technologies Used:</strong> C++, Object-Oriented Programming, Algorithm Design.</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Project 2: Ludo Game in C++</strong>
-                <ul>
-                    <li><strong>Description:</strong> Created a simplified version of Ludo in C++, allowing multiple players to compete in a race to the finish. The game manages player movements, dice rolls, and winning conditions.</li>
-                    <li><strong>Key Features:</strong>
-                        <ul>
-                            <li>Multiplayer functionality.</li>
-                            <li>Random dice rolls using C++'s random library.</li>
-                            <li>Well-structured game flow with win condition handling.</li>
-                        </ul>
-                    </li>
-                    <li><strong>Technologies Used:</strong> C++, Game Logic, Random Number Generation.</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Project 3: Calculator in C++</strong>
-                <ul>
-                    <li><strong>Description:</strong> Built a basic calculator that can perform arithmetic operations like addition, subtraction, multiplication, and division. The project focuses on user-friendly input handling and efficient computation.</li>
-                    <li><strong>Key Features:</strong>
-                        <ul>
-                            <li>Supports basic arithmetic operations.</li>
-                            <li>Error handling for invalid inputs and division by zero.</li>
-                            <li>User-friendly console interface.</li>
-                        </ul>
-                    </li>
-                    <li><strong>Technologies Used:</strong> C++, Input/Output Handling, Control Flow Structures.</li>
-                </ul>
-            </li>
-        </ul>
+       
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <h2>Projects</h2>
+            <div id="projects-list"></div> 
+        </section>
         
-    </section>
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <h2>Contact</h2>
+            <p>Reach out to me via email at <a href="mailto:example@example.com">muhammadsarfrazx64@gmail.com</a>.</p>
+        </section>
+    </main>
 
-    <!-- Contact Section -->
-    <section class="section contact">
-        <h2>Contact</h2>
-        <p>reach out to me via email at <a href="mailto:example@example.com">muhammadsarfrazx64@gmail.com</a>.</p>
-    </section>
-
-    <div class="footer">
+    <!-- Footer -->
+    <footer class="footer">
         <p>© 2024 Portfolio. All rights reserved.</p>
-    </div>
+    </footer>
 
-    <script>
-        let vid = document.getElementById("back");
-        vid.playbackRate = 0.5;
-    </script>
+    <!-- External JS File -->
+    <script src="main.js"></script>
 </body>
 </html>
